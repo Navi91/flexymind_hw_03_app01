@@ -10,7 +10,7 @@
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Hello World, MyActivity"
+                android:text="@string/hellow"
                 android:layout_column="2"/>
     </TableRow>
     <TableRow
@@ -19,9 +19,9 @@
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Регистрация"
+                android:text="@string/registration"
                 android:id="@+id/registrationbutton"
-                android:onClick="sendMessage"
+                android:onClick="createRegistrainActivity"
                 android:layout_column="2"/>
     </TableRow>
     <TableRow
@@ -30,8 +30,9 @@
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Выйти"
+                android:text="@string/exit"
                 android:id="@+id/exitbutton"
+                android:onClick="onBackPressed"
                 android:layout_column="2"/>
     </TableRow>
 </TableLayout>

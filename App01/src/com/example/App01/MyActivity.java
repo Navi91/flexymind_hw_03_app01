@@ -41,7 +41,12 @@ public class MyActivity extends Activity {
         super.onDestroy();
     }
 
-    public void sendMessage(View view){
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+    }
+
+    public void createRegistrainActivity(View view){
         Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
     }
