@@ -2,6 +2,9 @@ package com.example.App01;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.content.Intent;
+
 
 public class MyActivity extends Activity {
     /**
@@ -10,6 +13,36 @@ public class MyActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.main);
+        setContentView(R.layout.main);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    public void sendMessage(View view){
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }
